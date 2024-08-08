@@ -6,12 +6,12 @@ namespace APIVentas.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ProductsController : ControllerBase
+    public class CategoriesController : ControllerBase
     {
         [HttpGet]
-        public IEnumerable<Product> Get()
+        public IEnumerable<Category> Get()
         {
-            return new List<Product> { new Product { Id = 1, Name = "Laptop",CustomerId=1,CategoryId =1 } };
+            return new List<Category> { new Category { Id = 1, Description = "Tecnología" } };
         }
     }
 }

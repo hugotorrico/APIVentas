@@ -6,5 +6,7 @@
         public string Name { get; set; }
 
         public int CustomerId { get; set; }
+        public int CategoryId { get; set; }
+
     }
 }
