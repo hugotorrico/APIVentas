@@ -9,7 +9,7 @@ namespace APIVentas.Controllers
     public class CustomersController : ControllerBase
     {
         [HttpGet]
-        public ActionResult<IEnumerable<Customer>> Get()
+        public IEnumerable<Customer> Get()
         {
             return new List<Customer> { new Customer { Id = 1, FirstName = "Hugo" } };
         }

@@ -9,9 +9,9 @@ namespace APIVentas.Controllers
     public class ProductsController : ControllerBase
     {
         [HttpGet]
-        public ActionResult<IEnumerable<Product>> Get()
+        public IEnumerable<Product> Get()
         {
-            return new List<Product> { new Product { Id = 1, Name = "Laptop" } };
+            return new List<Product> { new Product { Id = 1, Name = "Laptop",CustomerId=1 } };
         }
     }
 }
